@@ -35,7 +35,8 @@ namespace numberGuess
            int secrectNumber = -1;
            int numGuesses = 0; // Number of guesses player is Allowed. 
            int numAttempts = 0; // Number of guesses TAKEN.
-           int playersScore =0,
+           int playersScore =0;
+           int playerGuess = 0;
            int cpuScore = 0; 
            string difficulty = "";
            int rangeMIn = -1;
@@ -64,10 +65,44 @@ namespace numberGuess
             Console.WriteLine("Minimum: " + rangeMin);
             Console.WriteLine("Maximum: " + rangeMax):
             Console.WrtieLine("Num. Guesses: " + numGuesses):
+        
+            // START THE MATCH!!
+            while(playerscore !=  3 && cpuScore != 3) {
+                 // Any Code you want to run Before each round goes here.
+                 // GENERATE SECRET NUMBER
+                 Random rndNum = new random();
+                 Console.WriteLine("secertNumber")      
+                 Console.WriteLine("Player Score: " + playerScore + "\n")
+                 Console.WriteLine("CPU Score: + cpuscore + \n")
+                 // START EACH ROUND 
+                 for(int i = 0; i < numGuesses ; i++) {
+                    // Code to guess number goes here.
+                    Console.WriteLine("You have used " + nunAttempts + " this round.\n");
+                    Console.WriteLine("You must guess between " + rangeMin + "and " + rangeMax + "\n");
+                    playerGuess = System.Convert.ToInt32(Console.WriteLine()); 
+                    if (playerGuess == secretNumber) {
+                        // Print a success message!
+                        playerScore++;
+                        break; 
+                    } else {
+                        if (playerGuess > secretNumber) {
+                            Console.WriteLine("Your guess is too high!\n");
+                        } else }
+                            Console.WriteLine("Your guess is to low\n") 
+                        }   
+                        
+                    }    
+                    numAttempts++;
+                
+                }
+                if (playerGuess != secertNumber) {
+                    // Print a round lost message to the console.
 
+                }
+            } 
+            if (playerScore >= 3) {
+                Console.WriteLine("You have won the game!\n");
+            } else {
+                Console.writeLine("You have lost the game!\n");
+            }
 
-
-         -
-        }
-    }
-}

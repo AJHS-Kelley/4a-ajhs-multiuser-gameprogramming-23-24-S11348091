@@ -113,6 +113,18 @@ namespace Operators
             Console.WriteLine("" + x);
             if (i == 50) {S  
                Continue;
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
                }
             }   
         
