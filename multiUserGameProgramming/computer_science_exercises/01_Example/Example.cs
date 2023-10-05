@@ -44,8 +44,12 @@ namespace _02_Collections
             Console.WriteLine("testscores: " + testscores.length);
             Console.WriteLine("GPA: " + GPA.length);
 
-            
-
+            // Accessing Array Elements -- use the index 
+            Console.WriteLine("The length of each array is:\n");
+            Console.WriteLine("breakfastfoods: " + breakfastfoods.length[0]);
+            Console.WriteLine("testscores: " + testscores.lenght[0]);
+            Console.WriteLine("GPA: " + GPA.lenght[0]);
+ 
 
            
         
