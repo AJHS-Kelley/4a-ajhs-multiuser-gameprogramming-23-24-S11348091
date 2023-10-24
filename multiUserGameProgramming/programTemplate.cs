@@ -37,11 +37,16 @@ namespace Operators
         }
     }    
     
-}     
+        0 refernce 
+        static void MakekEggs(int num, string style)
+        }     
+
         static void Main(string[] args)
         {
         mymethod();
 
     }
+
+    
 
     
