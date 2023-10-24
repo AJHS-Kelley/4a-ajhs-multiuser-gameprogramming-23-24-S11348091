@@ -30,16 +30,18 @@ namespace Operators
          
 
           // Methods with parameters
-
-          
-   
-
+        0 refernce 
+        static void MakePancakes(int num)
+        {
+          Console.writeLine("One golden, fluffy pancake coming up!\n"); 
+        }
+    }    
     
-
-        
-    
-
-
+}     
+        static void Main(string[] args)
+        {
+        mymethod();
 
     }
-}
+
+    
