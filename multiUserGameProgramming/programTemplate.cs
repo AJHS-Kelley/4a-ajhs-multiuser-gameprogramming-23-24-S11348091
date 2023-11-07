@@ -35,17 +35,54 @@ namespace Operators
         {
           Console.writeLine("One golden, fluffy pancake coming up!\n"); 
         }
-    }    
-    
-        0 refernce 
-        static void MakekEggs(int num, string style)
-        }     
+      } 
 
-        static void Main(string[] args)
-        {
-        mymethod();
+        0 refernce 
+        static void MakeEggs(int num, string style)
+             
+        // Using defaults for parameters
+        static void MakeBurger(int num = 1)
+      {
+        Console.writeLine("I am going to cook " + num + "hmburgers.\n");
+      }
+    
+       // Named Arguments
+       static void AllmyCHildern(string child1, string child2, string child3)
+      {
+        Console.WriteLine("My favorite child is " + child3);
+      }
+       
+      // METHOD OVERLOADING
+      static int Findsum(int x, int y);
+      {
+        int sum = x + y;
+        Console.WriteLine("Sum: " + sum);
+        return sum;
+
+      }
+
+      static void main(string[]args)
+      {
+        //MyMethod();
+        //DoubleUp();
+        //MakePancakes();
+        //MakeEggs(10, "sunny side up");
+        MakeBurger();
+        MakeBurger(10);
+        AllmyChildern(child3: "Steve", child2: "Susan", Child1: "Chewbacca");
+        FindSum(1, 5); // Two INTEGERS
+        FindSum(9.5, 2,4); // TWO DOUBLES
+        FindSum(5, 2.5); // ONE OF EACH
+      {
 
     }
+    
+    
+  }
+
+   
+}
+
 
     
 
