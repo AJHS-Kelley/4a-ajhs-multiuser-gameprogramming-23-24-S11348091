@@ -1,7 +1,15 @@
 // Amaure Cooper, Program Template, v0.0
 using System;
-
-namespace Operators
+/*
+Void Method
+Method return
+Method Parameter
+Method with multiple Parameters 
+Method with Default Parameters
+Method Class using Named Arguments
+method overloading
+*/
+namespace MethodsParameters
 {
     class Program MethodsParameters 
     {
