@@ -1,0 +1,45 @@
+// Amaure Cooper, Program Template, v0.0
+
+/*
+placement
+steer
+speed
+turbo 
+lanes
+*/
+
+
+
+using System;
+
+namespace Operators
+{
+    class Program
+    {
+        static void Method1()
+        {
+          int speed = 0 + 240;
+        }
+        static void Method2()
+        {
+          int
+        }
+        static void Method3()
+        {
+          int
+        }
+        static void Method4()
+        {
+          int
+        }
+        static void Main(string[] args)
+        {
+            int 
+
+        }
+    }
+}
+
+
+
+
