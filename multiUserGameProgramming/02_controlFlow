@@ -1,0 +1,130 @@
+// Amaure Cooper, operators , v0.0
+using System;
+
+namespace Operators
+
+   class controlFlow
+   {
+     
+     0 references
+     static void Main(string[]args)
+     {
+        // Decarations
+        string favColor = "Blue";
+        int luckyNumber = -5; 
+        float myGPA = 3.5;
+        int myAge = 43;
+        bool pineappleOnPizza = false;
+
+        // if Statement -- check for a single condtiton!
+        
+        if(favColor == "Blue") {
+            console.WriteLine("Blue with envy!");
+        }
+         if(luckyNumber % 2 == 0 )
+           Console.WriteLine("Your lucky number is even!");
+        
+        // if - else statement -- checks for a single condition, but has two
+        if ( myAge > 15) }
+         } else { 
+            Console.WriteLine("You are eligible to drive");
+         } else {
+             Console.WriteLine("START WALKING SCRUB!");
+        
+        // if -- else if -- else -- checks multiple outcomes.
+        if (myGPA == 3.5F) {
+            Console.WriteLine("Congrats on straight A grades!");
+        }  else if (myGpA >= 3.0F) {
+            console.WriteLine("Congrats on making honor roll!") 
+        }  else if (myGPA >= 2.0F) { 
+             console.wrtieLine("You are graduation ready!");
+        }   else { 
+            console.WriteLine("You should probably study!")
+        }
+
+        // Nested Statements
+        if (pineappleOnPizza == true) {
+            console.WriteLine("Eww, that's gross. You must be a booomer. How old are you?");
+            if (myAge > 60 ) { 
+              Console.writeLine("Just as i suspected! What was it likw having a dinosour growing up?");
+            } else {
+                Console.WriteLine("OK, so you're not a boomer but still have no taste in food."); 
+            }
+        } else { 
+            Console.WriteLine("Gald to see you have common sense!");
+        }
+
+        // for loop -- best for when you know # of iterations needed.
+        /* 
+           for (statement1; statement2; statement3) {
+            Code to loop.
+
+           }
+
+        statement1 is executed ONCE BEFORE THE loop starts.
+        statement2 is a CONDITIONAL that is checked EVERYTHING BEFORE loop starts.
+        statement3 is executed EVERYTIME after the loop executes.
+        /*
+     
+        for(int i = 0; i < 101; i++) {
+            Console.WriteLine("" + i);
+
+        }  
+        
+        // Create your own loop that counts down from 100 + 0.
+        for (int i = 0; i < 101; i--) {
+            Console.WriteLine("" +i);
+            
+        }
+        
+        // Nested loops
+        // Outer loop 
+        for (int i = 1; i <=2; i++)
+            Console.WriteLine("Outer: " +i);
+            
+        }
+
+        
+        for (int j = 1; j <= 3; j++) {  
+            Console.WriteLine("Inner: " +j);
+        }
+    }    
+
+        // while loop -- Best used when # of iterations needed is unknown
+        int x = 0;
+        while ( x < 1000) {
+            Console.WriteLine("" + x);
+            x++; 
+        }    
+        
+        // Special Keywords
+        // Break will immediately exit a Loop or an IF/ElSE IF/ElSE block.
+         for(int i = 0; i < 101; i++) {
+            Console.WriteLine("" + i);
+            if (i == 50) {        
+                break;
+                
+            }    
+        }
+        
+        // contuine will SKIP the current iteration and then finish the Loop.
+        int x = 0;
+        while ( x < 1000) {
+            Console.WriteLine("" + x);
+            if (i == 50) {S  
+               Continue;
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+               }
+            }   
+        
