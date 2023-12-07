@@ -32,8 +32,8 @@ namespace Operators
       // Motion Capture
 
       //Motion:
-      Image(),
-      Image(int design, int picture);
+      Console.writeLine(),
+      Console.writeLine(int design, int picture);
       Void Output();
       motion capture- ( design image & Picture graphic);
 
@@ -62,8 +62,6 @@ namespace Operators
       
     }
       
-    
-
     //Keep Main at the bottom
     static void Main(string[] args)
     {
