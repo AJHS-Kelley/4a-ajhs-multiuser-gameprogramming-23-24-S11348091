@@ -8,9 +8,7 @@ namespace UPDATEFOREACHPROGRAM
     class UPDATEFOREACHPROGRAM 
     {
 
-        static void CarModels(
-        
-        
+        static 
         static void Main(string[] args)
         {
             

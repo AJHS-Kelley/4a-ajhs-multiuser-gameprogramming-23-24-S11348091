@@ -17,7 +17,7 @@ namespace GameMethod
         -- Within the data collected the avergaes of speed will decrease
         --The motion of the cars are programed to show top speed
         */
-        0 refernce 
+        
        // Car Models
        {
          Console.writeLine("As you race, The speed and timing will be caculated.\n");
