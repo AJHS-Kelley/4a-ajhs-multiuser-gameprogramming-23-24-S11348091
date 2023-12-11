@@ -63,4 +63,40 @@ class RacingGame
     // Function to move the player's car to the right
     static void MovePlayerRight()
     {
-    
+        if (playerPosition < 39)
+        {
+            playerPosition++;
+        }
+    }
+
+    // Function to move the computer's car randomly
+    static void MoveComputer()
+    {
+        Random random = new Random();
+        int move = random.Next(0, 3); // 0 - don't move, 1 - move left, 2 - move right
+
+        if (move == 1 && computerPosition > 0)
+        {
+            computerPosition--;
+        }
+        else if (move == 2 && computerPosition < 39)
+        {
+            computerPosition++;
+        }
+    }
+
+    // Function to check for the winner
+    static void CheckWinner()
+    {
+        if (playerPosition >= 39)
+        {
+            Console.WriteLine("Congratulations! You won!");
+            Environment.Exit(0);
+        }
+        else if (computerPosition >= 39)
+        {
+            Console.WriteLine("Computer won! Better luck next time.");
+            Environment.Exit(0);
+        }
+    }
+}
