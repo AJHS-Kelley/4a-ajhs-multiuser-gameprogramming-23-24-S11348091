@@ -1,0 +1,66 @@
+using System;
+
+class RacingGame
+{
+    static int playerPosition = 20; // Initial player position
+    static int computerPosition = 20; // Initial computer position
+
+    static void Main()
+    {
+        Console.WriteLine("Welcome to the Racing Game!");
+        Console.WriteLine("Press 'A' to move left, 'D' to move right, and 'Q' to quit.");
+
+        while (true)
+        {
+            DrawTrack();
+            DrawCars();
+            char key = Char.ToLower(Console.ReadKey(true).KeyChar);
+
+            if (key == 'a')
+            {
+                MovePlayerLeft();
+            }
+            else if (key == 'd')
+            {
+                MovePlayerRight();
+            }
+            else if (key == 'q')
+            {
+                break; // Quit the game if 'Q' is pressed
+            }
+
+            MoveComputer(); // Move computer's car
+            CheckWinner(); // Check for winner
+        }
+
+        Console.WriteLine("Thanks for playing!");
+    }
+
+    // Function to draw the racetrack
+    static void DrawTrack()
+    {
+        Console.Clear();
+        Console.WriteLine("-------------------------------------------------");
+    }
+
+    // Function to draw the cars on the track
+    static void DrawCars()
+    {
+        Console.WriteLine(new string(' ', playerPosition) + "P" + new string(' ', 40 - playerPosition) + "|");
+        Console.WriteLine(new string(' ', computerPosition) + "C" + new string(' ', 40 - computerPosition) + "|");
+        Console.WriteLine("-------------------------------------------------");
+    }
+
+    // Function to move the player's car to the left
+    static void MovePlayerLeft()
+    {
+        if (playerPosition > 0)
+        {
+            playerPosition--;
+        }
+    }
+
+    // Function to move the player's car to the right
+    static void MovePlayerRight()
+    {
+    
