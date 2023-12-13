@@ -30,7 +30,7 @@ class RacingGame
             }
 
             MoveComputer(); // Move computer's car
-            CheckWinner(); // Check for winner
+            CheckWinner(playerPosition,computerPosition); // Check for winner
         }
 
         Console.WriteLine("Thanks for playing!");
@@ -52,25 +52,30 @@ class RacingGame
     }
 
     // Function to move the player's car to the left
-    static void MovePlayerLeft()
+    static int MovePlayerLeft(string key = "")
     {
         if (playerPosition > 0)
         {
             playerPosition--;
+    
         }
+        return playerPosition;
     }
 
+
     // Function to move the player's car to the right
-    static void MovePlayerRight()
+    static int MovePlayerRight(string key = "")
     {
         if (playerPosition < 39)
         {
             playerPosition++;
         }
+        return playerPosition;
     }
 
+
     // Function to move the computer's car randomly
-    static void MoveComputer()
+    static int MoveComputer()
     {
         Random random = new Random();
         int move = random.Next(0, 3); // 0 - don't move, 1 - move left, 2 - move right
@@ -83,10 +88,11 @@ class RacingGame
         {
             computerPosition++;
         }
+        return computerPosition;
     }
 
     // Function to check for the winner
-    static void CheckWinner()
+    static void CheckWinner(int playerPosition, int computerPosition)
     {
         if (playerPosition >= 39)
         {
